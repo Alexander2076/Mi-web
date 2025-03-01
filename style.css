@@ -236,6 +236,99 @@ body{
 }
 
 
+/*esta es la seccion de tienda*/
+
+.tienda__container{
+    padding: 20px;
+    height: calc(100vh - 60px)
+}
+
+.tienda__aside{
+    display: none;
+}
+
+.img__container{
+    width: 100%;
+}
+
+.img__container img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.productos__container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: var(--color-blanco);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.productos__titulo{
+    grid-column: span 2;
+    font-size: 20px;
+    color: var(--color-principal);
+}
+
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.producto__descripcion{
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    top: -10px;
+    gap: 5px;
+}
+
+.producto__link{
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-principal);
+    background-color: var(--color-blanco);
+    border-radius: 12px;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.producto__titulo{
+    font-size: 18px;
+}
+
+.producto__precio{
+    font-size: 12px;
+}
+
+.producto__link:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-blanco);
+    color: var(--color-blanco);
+    transition: all 1s ease;
+}
+
+.producto:hover{
+    transform: scale(1.05);
+}
+
+
 @keyframes deslizar {
 
     0%{
