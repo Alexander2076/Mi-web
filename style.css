@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: fuente-principal;
+    user-select: none;
+}
+
+:root{
+    --color-principal: #48e;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-hover: #1167e7;
+    --color-transparente: rgba(0, 0, 0, 0.5)
+}
+
+body{
+    background-color: var(--color-principal);
+}
+
+
+.nav__logo{
+    text-decoration: none;
+    color: var(--color-negro);
+    font-size: 25px;
+}
+
+
+.nav__logo::first-letter{
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.nav{
+    background-color: var(--color-blanco);
+}
+
+
+.nav__container{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+
+.nav__list{
+    background-color: var(--color-blanco);
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__list-item{
+    list-style: none;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.nav__list-item:hover{
+    background-color: var(--color-hover);
+}
+
+.nav__list-link{
+    color: var(--color-negro);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 1s ease;
+}
+
+.nav__list-item:hover .nav__list-link{
+    color: var(--color-blanco);
+}
+
+
+
+.submenu__list{
+    display: none;
+}
+
+
+
+
+
+.nav__menus-container input{
+    display: none;
+}
+
+
+
+.nav__menus-container label{
+    background-color: var(--color-principal);
+    color: white;
+    padding: 6px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.nav__menus-container label:hover{
+    background-color: var(--color-hover);
+}
+
+
+.nav__search{
+    display: none;
+    position: fixed;
+    background-color: var(--color-transparente);
+    width: 100%;
+    left: 0;
+    top: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav__search input{
+    width: 80%;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+    outline: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.363);
+}
+
+.nav__search input::placeholder{
+    color: var(--color-blanco);
+}
+
+/*para sacar la x al input*/
+.nav__search input::-webkit-search-cancel-button {
+    display: none;
+  }
+  
+
+
+
+/*aca validamos si el input esta checkeado, mostramos el menu*/
+
+.nav:has(#abrir-menu:checked) .nav__list{
+    display: flex;
+}
+
+/*aca validamos el input de busqueda*/
+
+.nav:has(#buscar:checked) .nav__search{
+    display: block;
+}
