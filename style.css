@@ -240,12 +240,10 @@ body{
 
 .tienda__container{
     padding: 20px;
-    height: calc(100vh - 60px)
+    height: auto;
 }
 
-.tienda__aside{
-    display: none;
-}
+
 
 .img__container{
     width: 100%;
@@ -271,7 +269,7 @@ body{
 
 .productos__titulo{
     font-size: 20px;
-    color: var(--color-principal);
+    color: var(--color-principal)
 }
 
 
@@ -325,6 +323,98 @@ body{
 
 .producto:hover{
     transform: scale(1.05);
+}
+
+
+.tienda__aside{
+    display: none;
+    position: fixed;
+    background-color: var(--color-blanco);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    top: 60px;
+    left: 0;
+    justify-content: center;
+}
+
+.aside__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aside__list-item{
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.aside__list-item:hover{
+    background-color: var(--color-hover);
+    color: var(--color-blanco);
+}
+
+
+.aside__item-link{
+    text-decoration: none;
+    color: var(--color-negro);
+    transition: color 1s ease;
+}
+
+.aside__list-item:hover .aside__item-link{
+    color: var(--color-blanco);
+}
+
+
+.aside__menu{
+    justify-self: end;
+}
+
+
+.menu-aside{
+    cursor: pointer;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 5px;
+    position: relative;
+    z-index: 30;
+    transition: background-color 1s ease;
+}
+
+
+.menu-aside:hover{
+    background-color: var(--color-hover);
+}
+
+#abrir-aside{
+    display: none;
+}
+
+.cerrar-menu{
+    display: none;
+}
+
+/*aca validamos el input para que nos muestre el menu aside*/
+
+.tienda__container:has(#abrir-aside:checked) .tienda__aside{
+    display: flex;
+}
+
+.tienda__container:has(#abrir-aside:checked) .abrir-menu{
+    display: none;
+}
+
+.tienda__container:has(#abrir-aside:checked) .cerrar-menu{
+    display: block;
 }
 
 
