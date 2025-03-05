@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltify Store</title>
+    <link rel="stylesheet" href="../fuentes/fuente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="nav">
+
+        <!--este contenedor es para mantener centrada la navegacion dentro del nav-->
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">V<span>oltify Store</span></h2>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="index.html" class="nav__list-link link-primario">
+                            <span class="material-symbols-outlined">home</span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="tienda/tienda.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">store</span>
+                            Tienda
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="contacto/contacto.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">call</span>
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav__list-item configuracion">
+                        <a href="" class="nav__list-link">
+                            <!--le agrego inputs checkbox y label para usarlo como interruptor y cambiar el tema cuando este checkeado-->
+                            <span class="material-symbols-outlined">settings</span>
+                            Tema
+                            <input type="checkbox" id="desplegar-tema">
+                            <label for="desplegar-tema" class="material-symbols-outlined flecha__desplegar-tema">chevron_right</label>
+                        </a>
+                        <span class="configuracion__tema">
+                            <label class="interruptor__container">
+                                <input type="checkbox" id="setting">
+                                <span class="interruptor"></span>
+                              </label>
+                        </span>
+                    </li>
+                </ul>
+                <div class="nav__menus-container">
+                    <input type="checkbox" id="buscar">
+                    <label for="buscar" class="material-symbols-outlined">search</label>
+                    <input type="checkbox" id="abrir-menu">
+                    <label for="abrir-menu" class="material-symbols-outlined">menu</label>
+                </div>
+                <div class="nav__search" id="barra-buscar">
+                    <input type="search" placeholder="buscar...">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+        </div>
+    </nav>
+
+    <main class="tienda__container">
+
+        <aside class="tienda__aside">
+            <ul class="aside__list">
+                <li class="aside__list-item">
+                    <a href="tienda.html" class="aside__item-link">
+                        <span class="material-symbols-outlined">category</span>
+                        Todos los productos
+                    </a>
+                </li>
+                <li class="aside__list-item">
+                    <a href="hogar.html" class="aside__item-link">
+                        <span class="material-symbols-outlined">house</span>
+                        Hogar
+                    </a>
+                </li>
+                <li class="aside__list-item">
+                    <a href="belleza.html" class="aside__item-link">
+                        <span class="material-symbols-outlined">health_and_beauty</span>
+                        Belleza
+                    </a>
+                </li>
+                <li class="aside__list-item">
+                    <a href="tecnologia.html" class="aside__item-link">
+                        <span class="material-symbols-outlined">computer</span>
+                        Tecnologia
+                    </a>
+                </li>
+                <li class="aside__list-item">
+                    <a href="salud.html" class="aside__item-link">
+                        <span class="material-symbols-outlined">health_and_safety</span>
+                        Salud
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="productos__container">
+
+            <h2 class="productos__titulo">Belleza</h2>
+            <div class="aside__menu">
+                <input type="checkbox" id="abrir-aside">
+                <label for="abrir-aside" class="material-symbols-outlined menu-aside abrir-menu">menu</label>
+                <label for="abrir-aside" class="material-symbols-outlined menu-aside cerrar-menu">close</label>
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/belleza/irrigador.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Irrigador Bucal</h2>
+                    <p class="producto__precio">$39999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/hidratante.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Hidratante</h2>
+                    <p class="producto__precio">$13999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/kit-nasal.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Kit Nasal</h2>
+                    <p class="producto__precio">$29999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/serum.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Serum</h2>
+                    <p class="producto__precio">$20999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/crema-facial.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Crema Facial</h2>
+                    <p class="producto__precio">$13999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+            <div class="modal__background">
+                <div class="modal__container">
+                    <input type="checkbox" id="abrir-modal">
+                    <p class="modal__titulo">Muchas gracias por comprar en Voltify Store! Tu pedido ha sido atendido exitosamente y pronto lo recibiras!!!</p>
+                    <label class="modal__cerrar" for="abrir-modal">Cerrar</label>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

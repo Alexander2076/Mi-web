@@ -1,69 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voltify Store</title>
-    <link rel="stylesheet" href="fuentes/fuente.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="fuentes/fuente.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="nav">
 
         <!--este contenedor es para mantener centrada la navegacion dentro del nav-->
         <div class="nav__container">
             <a href="index.html" class="nav__logo">V<span>oltify Store</span></h2>
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="index.html" class="nav__list-link link-primario">
-                        <span class="material-symbols-outlined">home</span>
-                        Inicio
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="tienda/tienda.html" class="nav__list-link">
-                        <span class="material-symbols-outlined">store</span>
-                        Tienda
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="contacto/contacto.html" class="nav__list-link">
-                        <span class="material-symbols-outlined">call</span>
-                        Contacto
-                    </a>
-                </li>
-                <li class="nav__list-item submenu">
-                    <a href="tienda/tienda.html" class="nav__list-link nav__item-desplegar">
-                        <span class="material-symbols-outlined">search</span>
-                        Buscar
-                    </a>
-                </li>
-                <li class="nav__list-item configuracion">
-                    <a href="" class="nav__list-link">
-                        <!--le agrego inputs checkbox y label para usarlo como interruptor y cambiar el tema cuando este checkeado-->
-                        <span class="material-symbols-outlined">settings</span>
-                        Tema
-                        <!-- <input type="checkbox" id="desplegar-tema">
-                        <label for="desplegar-tema" class="material-symbols-outlined desplegar-tema">chevron_right</label> -->
-                    </a>
-                    <span class="configuracion__item">
-                        <!-- <input type="checkbox" id="setting"> -->
-                        <label for="setting" class="interruptor">
-                            <span class="circulo"></span>
-                        </label>
-                    </span>
-                </li>
-            </ul>
-            <div class="nav__menus-container">
-                <input type="checkbox" id="buscar">
-                <label for="buscar" class="material-symbols-outlined">search</label>
-                <input type="checkbox" id="abrir-menu">
-                <label for="abrir-menu" class="material-symbols-outlined">menu</label>
-            </div>
-            <div class="nav__search" id="">
-                <input type="search" placeholder="buscar...">
-            </div>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="index.html" class="nav__list-link link-primario">
+                            <span class="material-symbols-outlined">home</span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="tienda/tienda.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">store</span>
+                            Tienda
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="contacto/contacto.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">call</span>
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav__list-item configuracion">
+                        <a href="" class="nav__list-link">
+                            <!--le agrego inputs checkbox y label para usarlo como interruptor y cambiar el tema cuando este checkeado-->
+                            <span class="material-symbols-outlined">settings</span>
+                            Tema
+                            <input type="checkbox" id="desplegar-tema">
+                            <label for="desplegar-tema"
+                                class="material-symbols-outlined flecha__desplegar-tema">chevron_right</label>
+                        </a>
+                        <span class="configuracion__tema">
+                            <label class="interruptor__container">
+                                <input type="checkbox" id="setting">
+                                <span class="interruptor"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+                <div class="nav__menus-container">
+                    <input type="checkbox" id="buscar">
+                    <label for="buscar" class="material-symbols-outlined">search</label>
+                    <input type="checkbox" id="abrir-menu">
+                    <label for="abrir-menu" class="material-symbols-outlined">menu</label>
+                </div>
+                <div class="nav__search" id="barra-buscar">
+                    <input type="search" placeholder="buscar...">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
         </div>
     </nav>
 
@@ -71,32 +69,235 @@
 
     <header class="header">
         <div class="header__carrusell">
-            <div class="header__img-container">
-                <img class="header__img" src="imagenes/hogar.webp">
-            </div>
-            <div class="header__img-container">
-                
-                <img class="header__img" src="imagenes/belleza.webp">
-            </div>
-            <div class="header__img-container">
-                
-                <img class="header__img" src="imagenes/salud.webp">
-            </div>
-            <div class="header__img-container">
-                
-                <img class="header__img" src="imagenes/tecnologia.webp">
-            </div>
 
+            <img class="header__img" src="imagenes/hogar.webp">
+
+            <img class="header__img" src="imagenes/belleza.webp">
+
+            <img class="header__img" src="imagenes/salud.webp">
+
+            <img class="header__img" src="imagenes/tecnologia.webp">
         </div>
         <div class="header__background">
             <div class="header__container">
 
                 <h1 class="header__titulo">¡Bienvenidos a Voltify Store!</h1>
-                <p class="header__parrafo">Tu tienda en línea especializada en belleza, salud, tecnología y hogar. Descubre una amplia selección de productos innovadores y de alta calidad que mejoran tu estilo de vida. Con envíos rápidos y atención al cliente excepcional, hacemos que tu experiencia de compra sea fácil y segura. ¡Explora nuestras ofertas y lleva lo mejor a tu hogar hoy mismo!</p>
+                <p class="header__parrafo">Tu tienda en línea especializada en belleza, salud, tecnología y hogar.
+                    Descubre una amplia selección de productos innovadores y de alta calidad que mejoran tu estilo de
+                    vida. Con envíos rápidos y atención al cliente excepcional, hacemos que tu experiencia de compra sea
+                    fácil y segura. ¡Explora nuestras ofertas y lleva lo mejor a tu hogar hoy mismo!</p>
                 <a href="#" class="header__link">Catologo</a>
 
             </div>
         </div>
     </header>
+
+
+
+    <!--seccion de quienes somos-->
+    <section class="informacion">
+        <div class="informacion__container">
+
+            <div class="informacion__img">
+                <img src="imagenes/hogar.webp">
+            </div>
+
+            <div class="informacion__texto">
+                <h1 class="informacion__titulo">Sobre Nosotros</h1>
+                <p class="informacion__parrafo">En VoltifyStore, nos destacamos por ofrecer productos innovadores, de
+                    alta calidad y a precios
+                    competitivos. Somos una tienda orgullosamente argentina, lo que nos
+                    permite brindarte los mejores artículos sin costos innecesarios y con envíos eficientes.</p>
+                <a class="informacion__link" href="porqueElegirnos.html">¿Por qué elegir VoltifyStore?</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--seccion de ofertas-->
+
+    <section class="ofertas">
+
+        <h2 class="oferta__titulo">🔥 ¡Aprovecha estas Ofertas! 🔥</h2>
+        
+        <div class="productos__container ofertas__container" >
+
+       
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/hogar/limpiador.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Limpiador</h2>
+                    <p class="producto__precio">$39999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/hogar/organizador.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Organizador</h2>
+                    <p class="producto__precio">$20000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/belleza/irrigador.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Irrigador Bucal</h2>
+                    <p class="producto__precio">$39999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/hogar/colchon.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Colchon de Aire</h2>
+                    <p class="producto__precio">$60000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/tecnologia/pc.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">PC de Escritorio</h2>
+                    <p class="producto__precio">$189999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/hogar/taladro.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Taladro</h2>
+                    <p class="producto__precio">$40000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/hogar/soporte-de-esponja.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Soporte de Esponja</h2>
+                    <p class="producto__precio">$14000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="tienda/productos img/salud/inhalador.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Inhalador</h2>
+                    <p class="producto__precio">$50000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+            </div>
+
+            <div class="modal__background">
+                <div class="modal__container">
+                    <input type="checkbox" id="abrir-modal">
+                    <p class="modal__titulo">Muchas gracias por comprar en Voltify Store! Tu pedido ha sido atendido exitosamente y pronto lo recibiras!!!</p>
+                    <label class="modal__cerrar" for="abrir-modal">Cerrar</label>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <a class="ver-mas" href="tienda/tienda.html">Ver todos los Productos</a>
+
+    </section>
+
+
+
+    <section class="suscripcion">
+
+        <div class="suscripcion__container">
+            <h2 class="suscripcion__titulo">¡No te pierdas nuestras ofertas!</h2>
+            <p class="suscripcion__parrafo">Suscríbete a nuestro boletín y sé el primero en enterarte de descuentos exclusivos, nuevos productos y promociones especiales.</p>
+            <p class="suscripcion__email-titulo">¡Ingresa tu correo y únete ahora!</p>
+            <form class="suscripcion__input-container">
+                <input class="suscripcion__input" type="email" placeholder="Correo Electronico">
+                <button class="suscripcion__button">unirse</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <p class="footer_parrafo">© 2025 Voltify Store. Todos los derechos reservados.</p>
+        <a class="footer__link" href="#">Terminos del Servicio</a>
+        <a class="footer__link" href="#">Politicas de Privacidad</a>
+        <a class="footer__link" href="#s">Sobre Nosotros</a>
+    </footer>
+
+
 </body>
+
 </html>

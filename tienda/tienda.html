@@ -35,26 +35,20 @@
                             Contacto
                         </a>
                     </li>
-                    <li class="nav__list-item submenu">
-                        <a href="tienda/tienda.html" class="nav__list-link nav__item-desplegar">
-                            <span class="material-symbols-outlined">search</span>
-                            Buscar
-                        </a>
-                    </li>
                     <li class="nav__list-item configuracion">
                         <a href="" class="nav__list-link">
                             <!--le agrego inputs checkbox y label para usarlo como interruptor y cambiar el tema cuando este checkeado-->
                             <span class="material-symbols-outlined">settings</span>
                             Tema
-                            <!-- <input type="checkbox" id="desplegar-tema">
-                        <label for="desplegar-tema" class="material-symbols-outlined desplegar-tema">chevron_right</label> -->
+                            <input type="checkbox" id="desplegar-tema">
+                            <label for="desplegar-tema" class="material-symbols-outlined flecha__desplegar-tema">chevron_right</label>
                         </a>
-                        <!-- <span class="configuracion__item">
-                        <input type="checkbox" id="setting">
-                        <label for="setting" class="interruptor">
-                            <span class="circulo"></span>
-                        </label>
-                    </span> -->
+                        <span class="configuracion__tema">
+                            <label class="interruptor__container">
+                                <input type="checkbox" id="setting">
+                                <span class="interruptor"></span>
+                              </label>
+                        </span>
                     </li>
                 </ul>
                 <div class="nav__menus-container">
@@ -63,42 +57,43 @@
                     <input type="checkbox" id="abrir-menu">
                     <label for="abrir-menu" class="material-symbols-outlined">menu</label>
                 </div>
-                <div class="nav__search" id="">
+                <div class="nav__search" id="barra-buscar">
                     <input type="search" placeholder="buscar...">
+                    <span class="material-symbols-outlined">search</span>
                 </div>
         </div>
     </nav>
 
-    <section class="tienda__container">
+    <main class="tienda__container">
 
         <aside class="tienda__aside">
             <ul class="aside__list">
                 <li class="aside__list-item">
-                    <a href="#" class="aside__item-link">
+                    <a href="tienda.html" class="aside__item-link">
                         <span class="material-symbols-outlined">category</span>
                         Todos los productos
                     </a>
                 </li>
                 <li class="aside__list-item">
-                    <a href="#" class="aside__item-link">
+                    <a href="hogar.html" class="aside__item-link">
                         <span class="material-symbols-outlined">house</span>
                         Hogar
                     </a>
                 </li>
                 <li class="aside__list-item">
-                    <a href="#" class="aside__item-link">
+                    <a href="belleza.html" class="aside__item-link">
                         <span class="material-symbols-outlined">health_and_beauty</span>
                         Belleza
                     </a>
                 </li>
                 <li class="aside__list-item">
-                    <a href="#" class="aside__item-link">
+                    <a href="tecnologia.html" class="aside__item-link">
                         <span class="material-symbols-outlined">computer</span>
                         Tecnologia
                     </a>
                 </li>
                 <li class="aside__list-item">
-                    <a href="#" class="aside__item-link">
+                    <a href="salud.html" class="aside__item-link">
                         <span class="material-symbols-outlined">health_and_safety</span>
                         Salud
                     </a>
@@ -116,14 +111,15 @@
             </div>
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/hogar/organizador.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Organizador</h2>
+                    <p class="producto__precio">$20000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
@@ -131,205 +127,278 @@
             
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/hogar/hidrolavadora.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Hidro Portatil</h2>
+                    <p class="producto__precio">$32999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/hogar/colchon.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Colchon de Aire</h2>
+                    <p class="producto__precio">$60000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
-            <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+             <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/hogar/taladro.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Taladro</h2>
+                    <p class="producto__precio">$40000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/hogar/soporte-de-esponja.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Soporte de Esponja</h2>
+                    <p class="producto__precio">$14000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/salud/inhalador.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Inhalador</h2>
+                    <p class="producto__precio">$50000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+                
+            </div>
+            
+
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <span class="item-oferta">🔥 Oferta 🔥</span>
+                    <img src="productos img/tecnologia/pc.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">PC de Escritorio</h2>
+                    <p class="producto__precio">$189999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/tecnologia/control-ps5.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Control de PS5</h2>
+                    <p class="producto__precio">$30000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/salud/utilcare.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Utilcare</h2>
+                    <p class="producto__precio">$10000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/salud/onecare.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">One-Care</h2>
+                    <p class="producto__precio">$9000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/kit-nasal.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Kit Nasal</h2>
+                    <p class="producto__precio">$29999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/irrigador.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Irrigador Bucal</h2>
+                    <p class="producto__precio">$39999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/serum.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Serum</h2>
+                    <p class="producto__precio">$20999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/belleza/crema-facial.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Crema Facial</h2>
+                    <p class="producto__precio">$13999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/tecnologia/tablet.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Tablet</h2>
+                    <p class="producto__precio">$99999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
             </div>
+
             <div class="producto">
 
-                <div class="img__container">
-                    <img src="productos img/laptop.webp">
+                <div class="img__container img-oferta">
+                    <img src="productos img/tecnologia/tablet-android.jpg">
                 </div>
 
                 <div class="producto__descripcion">
-                    <h2 class="producto__titulo">laptop</h2>
-                    <p class="producto__precio">599$</p>
-                    <a class="producto__link" href="#">comprar</a>
+                    <h2 class="producto__titulo">Tablet Android</h2>
+                    <p class="producto__precio">$110999</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/salud/bascula.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Bascula</h2>
+                    <p class="producto__precio">$39000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
                 </div>
 
 
+            </div>
+
+            <div class="producto">
+
+                <div class="img__container img-oferta">
+                    <img src="productos img/salud/termometro.jpg">
+                </div>
+
+                <div class="producto__descripcion">
+                    <h2 class="producto__titulo">Termometro</h2>
+                    <p class="producto__precio">$15000</p>
+                    <label class="producto__link" for="abrir-modal">comprar</label>
+                </div>
+
+
+            </div>
+
+            <div class="modal__background">
+                <div class="modal__container">
+                    <input type="checkbox" id="abrir-modal">
+                    <p class="modal__titulo">Muchas gracias por comprar en Voltify Store! Tu pedido ha sido atendido exitosamente y pronto lo recibiras!!!</p>
+                    <label class="modal__cerrar" for="abrir-modal">Cerrar</label>
+                </div>
             </div>
 
         </div>
 
 
-    </section>
+    </main>
 
 
 </body>

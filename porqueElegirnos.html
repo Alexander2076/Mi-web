@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltify Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="fuentes/fuente.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav">
+
+        <!--este contenedor es para mantener centrada la navegacion dentro del nav-->
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">V<span>oltify Store</span></h2>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="index.html" class="nav__list-link link-primario">
+                            <span class="material-symbols-outlined">home</span>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="tienda/tienda.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">store</span>
+                            Tienda
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="contacto/contacto.html" class="nav__list-link">
+                            <span class="material-symbols-outlined">call</span>
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav__list-item configuracion">
+                        <a href="" class="nav__list-link">
+                            <!--le agrego inputs checkbox y label para usarlo como interruptor y cambiar el tema cuando este checkeado-->
+                            <span class="material-symbols-outlined">settings</span>
+                            Tema
+                            <input type="checkbox" id="desplegar-tema">
+                            <label for="desplegar-tema"
+                                class="material-symbols-outlined flecha__desplegar-tema">chevron_right</label>
+                        </a>
+                        <span class="configuracion__tema">
+                            <label class="interruptor__container">
+                                <input type="checkbox" id="setting">
+                                <span class="interruptor"></span>
+                            </label>
+                        </span>
+                    </li>
+                </ul>
+                <div class="nav__menus-container">
+                    <input type="checkbox" id="buscar">
+                    <label for="buscar" class="material-symbols-outlined">search</label>
+                    <input type="checkbox" id="abrir-menu">
+                    <label for="abrir-menu" class="material-symbols-outlined">menu</label>
+                </div>
+                <div class="nav__search" id="barra-buscar">
+                    <input type="search" placeholder="buscar...">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+        </div>
+    </nav>
+
+    
+    <section class="preguntas">
+        <h2>¿Por qué elegir VoltifyStore?</h2>
+        <input type="checkbox" id="preguntas">
+        <label class="preguntas__btn" for="preguntas">Descubre las razones</label>
+        <div class="preguntas__contenido">
+            <details>
+                <summary>🔝 Productos de Alta Calidad</summary>
+                <p>Seleccionamos los mejores productos para garantizar durabilidad y eficiencia.</p>
+            </details>
+            <details>
+                <summary>💰 Precios Competitivos</summary>
+                <p>Ofrecemos precios justos sin sacrificar la calidad.</p>
+            </details>
+            <details>
+                <summary>🔒 Pago Seguro</summary>
+                <p>Plataformas de pago seguras para proteger tus datos.</p>
+            </details>
+            <details>
+                <summary>🚀 Envío Rápido</summary>
+                <p>Entregamos en el menor tiempo posible a toda Argentina.</p>
+            </details>
+            <details>
+                <summary>📞 Atención al Cliente 24/7</summary>
+                <p>Estamos disponibles para responder tus dudas en cualquier momento.</p>
+            </details>
+            <details>
+                <summary>✅ Garantía de Satisfacción</summary>
+                <p>Si no estás conforme, buscamos la mejor solución para ti.</p>
+            </details>
+            <details>
+                <summary>🛍️ Diseño Moderno</summary>
+                <p>Navegación intuitiva y compra sin complicaciones.</p>
+            </details>
+            <details>
+                <summary>🎁 Gran Variedad de Productos</summary>
+                <p>Siempre encontrarás lo que necesitas en nuestro catálogo.</p>
+            </details>
+            <details>
+                <summary>🏡 Compras desde Casa</summary>
+                <p>Evita filas y estrés, compra fácil y rápido.</p>
+            </details>
+        </div>
+    </section>
+    
+ 
+
+</body>    
+
+</html>
+
+
+
+
+
+
+
+
+
+
+    
