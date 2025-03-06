@@ -143,13 +143,13 @@ body{
     border-radius: 12px;
     padding: 10px 15px;
     outline: none;
-    color: var(--color-blanco);
-    background-color: rgba(128, 128, 128, 0.411);
+    color: var(--color-negro);
+    background-color: var(--color-blanco)
 
 }
 
 .nav__search input::placeholder{
-    color: var(--color-blanco);
+    color: var(--color-negro);
 }
 
 /*para sacar la x al input*/
@@ -684,10 +684,6 @@ body:has(#setting:checked) .interruptor {
     font-size: 30px;
 }
 
-body:has(#setting:checked){
-    --color-blanco: black;
-    --color-negro: white
-}
 
 
 
@@ -1289,4 +1285,75 @@ body:has(#abrir-modal:checked) .modal__background{
     to{
         transform: translateY(0);
     }
+}
+
+
+
+
+
+/*validacion del tema negro*/
+
+body:has(#setting:checked) .nav__list-link {
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .nav__logo {
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .nav__search input {
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .nav {
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .informacion__container {
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .informacion {
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .informacion__texto {
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .ofertas {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .ofertas__container{
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .productos__container{
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .aside__item-link:hover{
+    background-color: var(--color-blanco);
+}
+body:has(#setting:checked) .aside__item-link:hover{
+    color: var(--color-negro);
+}
+body:has(#setting:checked) .aside__item-link:hover::after{
+    display: none;
+}
+body:has(#setting:checked) .aside__item-link:hover::before{
+    display: none;
+}
+body:has(#setting:checked) .nav__list{
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .aside__list{
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .aside__item-link{
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .modal__container{
+    background-color: var(--color-negro);
+}
+body:has(#setting:checked) .modal__container{
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .nav__search input{
+    color: var(--color-blanco);
+}
+body:has(#setting:checked) .nav__search input::placeholder{
+    color: var(--color-blanco);
 }
